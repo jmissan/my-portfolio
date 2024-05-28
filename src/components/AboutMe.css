@@ -1,0 +1,358 @@
+/* src/components/AboutMe.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Parallax Effect */
+/*body::before {
+    content: "";
+    background: url('../background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.6);
+}*/
+
+    /* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-nav ul li {
+    margin-right: 5px;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a.active,
+.header-nav ul li a:hover {
+    color: #f7f0ff;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white; /* Set text color to white */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Create black outline */
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 0;
+    transition: background-color 0.3s ease;
+    text-align: justify;
+}
+
+.profile-picture {
+    position: relative;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 3px rgba(177, 227, 247, 0.5); /* Dynamic outline */
+    transition: box-shadow 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.profile-picture img:hover {
+    box-shadow: 0 0 0 6px rgba(133, 228, 252, 0.7); /* Enhanced dynamic outline on hover */
+}
+
+/* Intersection Observer animations */
+.fly-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section:not(.fly-in) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: right;
+    align-items: right;
+}
+
+.fly-in {
+    animation: flyIn 0.6s ease-out;
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.me .me-content {
+    display: flex;
+    align-items: center;
+    background-color: #c7fad3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.me-text {
+    flex: 2 1 60%;
+}
+
+.me .me-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bio Section Styles */
+.bio .bio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f1f8ff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bio .bio-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bio-text {
+    flex: 2 1 60%;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between bio items */
+}
+
+.bio-item {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+}
+
+.bio-image img {
+    max-width: 105px; /* Adjust image size as needed */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.bio-image2 {
+    flex: 1 1 150px;
+    max-width: 105px;
+    margin-right: 20px;
+}
+
+.bio-image2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img {
+    width: 100%;
+    flex: 1 1 150px;
+    max-width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Skills Section Styles */
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f7f0ff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills .skills-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills-text {
+    list-style-type: none;
+    padding: 0;
+    flex: 2 1 60%;
+}
+
+.skills-text li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Interests Section Styles */
+.interests .interests-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interests .interests-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.interests-text {
+    flex: 2 1 60%;
+}
+
+.interests-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Education Section Styles */
+.education .education-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fcf2e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education .education-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education-text {
+    flex: 2 1 60%;
+}
+
+.education-image {
+    flex: 1 1 150px;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.education-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.education p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-content, .skills-content, .interests-content, .education-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .bio-image, .education-image {
+        margin-bottom: 20px;
+        margin-right: 0;
+        max-width: 100%;
+    }
+}

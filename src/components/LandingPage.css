@@ -1,0 +1,90 @@
+/* src/components/LandingPage.css */
+
+.landing-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background color */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition for fade in/out effect */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.landing-page.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
+.landing-page.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.landing-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay color */
+}
+
+.landing-page .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.landing-page .profile-picture {
+    width: 410px; /* Adjust size as needed */
+    height: 350px; /* Adjust size as needed */
+    border-radius: 100%; /* Make the image round */
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for the image */
+}
+
+.landing-page h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.landing-page .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4081; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+}
+
+.landing-page .close-button:hover {
+    background-color: #fff; /* Button background color on hover */
+    color: #ff4081; /* Button text color on hover */
+}
+
+@media (max-width: 768px) {
+    .landing-page .profile-picture {
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px; /* Adjust size for smaller screens */
+    }
+
+    .landing-page h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .landing-page .close-button {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}

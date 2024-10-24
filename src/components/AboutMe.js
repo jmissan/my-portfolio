@@ -26,16 +26,17 @@ const AboutMe = () => {
             <section ref={meRef} id="me" className={`section me ${meInView ? 'fly-in' : ''}`}>
                 <div className="container">
                     <h2 className="section-title">Quick Introduction</h2>
-                    <div className="me-content">
+                    <div className="picture-content">
                         <div className="profile-picture">
                             <img src={col} alt="Profile" />
                         </div>
-                        <div className="me-text">
-                            <p>Hi! My name's Joey Missan</p>
+                        <div className="profile-text">
+                            <p>Hi! My name's Joey Missan. I am currently a Software Development Engineer 1 at AMD, where I work on back-end software focused with hints of systems design engineering. My typical day consists of creating API endpoints using Java/Spring Boot to ensure the front-end team receives all of the data they need to provide an efficient UX design. I also write task scripts in Python for our company's internal automation software to be utilized by other teams, and I create schema/edit data for our software in SQL on a daily basis. Additionally, I often work with our company's SUT's, or system's-under-test, to validate and automate test cases, and I document projects my team and I have worked on in Confluence for other teams to view as necessary.</p>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section ref={bioRef} id="bio" className={`section bio ${bioInView ? 'fly-in' : ''}`}>
                 <div className="container">
                     <h2 className="section-title">Work Experience</h2>
@@ -45,7 +46,7 @@ const AboutMe = () => {
                                 <img src={amd} alt="AMD" />
                             </div>
                             <div className="bio-text">
-                                <p>I most recently worked as an Automation Software Development Intern at AMD. In this role, I wrote and tested Python automation validation framework scripts for server CPU testing. I worked on various projects ranging from refactoring our codebase to remove 3rd party libraries to converting internal software from one application to another. I gained an abundance of knowledge in the realm of high-performance CPUs and am eager to learn more throughout my time as a full-time employee at AMD.</p>
+                                <p>Before I began at AMD full-time, I first worked as an Automation Software Development Intern at the company. In this role, I wrote and tested Python automation validation framework scripts for server CPU testing. I worked on various projects ranging from refactoring our codebase to remove 3rd party libraries to converting internal software from one application to another. I gained an abundance of knowledge in the realm of high-performance CPUs and am eager to learn more throughout my time as a full-time employee at AMD.</p>
                             </div>
                         </div>
 
@@ -112,27 +113,6 @@ const AboutMe = () => {
             </section>
 
         
-            <section ref={projectsRef} id="projects" className={`section projects ${projectsInView ? 'fly-in' : ''}`}>
-                <div className="container">
-                    <h2 className="section-title">Projects</h2>
-                    <div className="projects-content">
-                        <div className="project-list">
-                        <ProjectCard
-                            title="Project One"
-                            description="This is a description of Project One."
-                            image="https://via.placeholder.com/200"
-                            link="https://example.com/project-one"
-                        />
-                        <ProjectCard
-                            title="Project Two"
-                            description="This is a description of Project Two."
-                            image="https://via.placeholder.com/200"
-                            link="https://example.com/project-two"
-                        />
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     );
 };

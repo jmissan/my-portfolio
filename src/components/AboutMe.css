@@ -96,9 +96,17 @@ body {
     text-align: justify;
 }
 
+.picture-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profile-picture {
+    flex: 0 1 auto;
+    margin: 0;
     position: relative;
-    margin-bottom: 0px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -158,6 +166,22 @@ body {
     }
 }
 
+.me .picture-content {
+    display: flex;
+    flex-direction: column; /* Keeps the vertical stacking */
+    align-items: center;
+    background-color: #c7fad3; /* Similar background color as the skills section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.me .picture-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
 .me .me-content {
     display: flex;
     align-items: center;
@@ -170,6 +194,14 @@ body {
 
 .me-text {
     flex: 2 1 60%;
+    margin-right: 300px;
+}
+
+.profile-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
 .me .me-content:hover {
@@ -196,6 +228,12 @@ body {
 
 .bio-text {
     flex: 2 1 60%;
+}
+
+.profile-text {
+    margin-top: 20px;
+    text-align: center;
+    flex: none;
 }
 
 .bio-content {

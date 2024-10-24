@@ -11,6 +11,9 @@ import jp from '../210909_jp-morgan_logo.jpg';
 import exelon from '../Exelon-logo.jpg';
 import '../font.css';
 import col from '../IMG_1183.JPG';
+import mail from '../mail3.webp';
+import linkedin from '../linkedinlogo.png';
+import github from '../github.webp';
 
 const AboutMe = () => {
     const [meRef, meInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -18,7 +21,7 @@ const AboutMe = () => {
     const [skillsRef, skillsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [interestsRef, interestsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [educationRef, educationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-    const [projectsRef, projectsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+    const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
 
     return (
@@ -36,7 +39,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </section>
-            
+
             <section ref={bioRef} id="bio" className={`section bio ${bioInView ? 'fly-in' : ''}`}>
                 <div className="container">
                     <h2 className="section-title">Work Experience</h2>
@@ -77,10 +80,12 @@ const AboutMe = () => {
                     <h2 className="section-title">Skills</h2>
                     <div className="skills-content">
                         <ul className="skills-text">
-                            <li>HTML5, CSS3, JavaScript</li>
-                            <li>React.js, Vue.js</li>
-                            <li>Bootstrap, Materialize CSS</li>
-                            <li>Git, GitHub, GitLab</li>
+                            <li>Python, Java, C/C++, SQL</li>
+                            <li>HTML5/CSS3, JavaScript, Django, npm</li>
+                            <li>Spring Boot, Cucumber, Selenium</li>
+                            <li>SystemVerilog, MATLAB, MIPS/RISC-V</li>
+                            <li>Git, GitHub, Shell Scripting, Unix/Linux</li>
+                            <li>Oscilloscopes, WaveForms, Soldering Electronics</li>
                         </ul>
                     </div>
                 </div>
@@ -91,7 +96,7 @@ const AboutMe = () => {
                     <h2 className="section-title">Interests</h2>
                     <div className="interests-content">
                         <div className="interests-text">
-                            <p>Outside of coding, I enjoy hiking, photography, and playing guitar.</p>
+                            <p>Outside of coding, I enjoy going to the gym, playing piano, cooking, traveling, and hanging out with friends. I am always open and willing to try new things! Ever since moving to Austin, I've met awesome people and explored the city (although there is always more to see!), and I am excited to continue my life journey in the live music capital of the world.</p>
                         </div>
                     </div>
                 </div>
@@ -111,6 +116,29 @@ const AboutMe = () => {
                     </div>
                 </div>
             </section>
+
+            <section ref={contactRef} id="contact" className={`section contact ${contactInView ? 'fly-in' : ''}`}>
+                <div className="container">
+                    <h2 className="section-title">Contact</h2>
+                    <div className="contact-content">
+                    <div className="contact-links">
+                    <a href="mailto:joeymissan@gmail.com" className="contact-link" target="_blank" rel="noopener noreferrer">
+                        <img src={mail} alt="Email" />
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joseph-missan-9448171b8/" className="contact-link" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="LinkedIn" />
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jmissan" className="contact-link" target="_blank" rel="noopener noreferrer">
+                        <img src={github} alt="GitHub" />
+                        <span>GitHub</span>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
 
         
         </div>

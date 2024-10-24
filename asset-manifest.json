@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ee18267.css",
-    "main.js": "/static/js/main.f0b6523d.js",
+    "main.css": "/static/css/main.077cff03.css",
+    "main.js": "/static/js/main.16999e42.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/media/IMG_1183.JPG": "/static/media/IMG_1183.c481345e59dfcad5d632.JPG",
     "static/media/DSC_0001.JPEG": "/static/media/DSC_0001.1e622ba5cbccfdd5c1c6.JPEG",
@@ -10,13 +10,16 @@
     "static/media/amd-symbol.webp": "/static/media/amd-symbol.92d374f4f6b46b85b58c.webp",
     "static/media/Exelon-logo.jpg": "/static/media/Exelon-logo.f19e57779b7d0dcbbcf0.jpg",
     "static/media/210909_jp-morgan_logo.jpg": "/static/media/210909_jp-morgan_logo.838b14c6b45ce710aeaf.jpg",
+    "static/media/github.webp": "/static/media/github.010a2fd15fdc36a3ffbf.webp",
+    "static/media/linkedinlogo.png": "/static/media/linkedinlogo.68ac41e1459436bfd38f.png",
+    "static/media/mail3.webp": "/static/media/mail3.6362ef82d1c4308e768d.webp",
     "index.html": "/index.html",
-    "main.5ee18267.css.map": "/static/css/main.5ee18267.css.map",
-    "main.f0b6523d.js.map": "/static/js/main.f0b6523d.js.map",
+    "main.077cff03.css.map": "/static/css/main.077cff03.css.map",
+    "main.16999e42.js.map": "/static/js/main.16999e42.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee18267.css",
-    "static/js/main.f0b6523d.js"
+    "static/css/main.077cff03.css",
+    "static/js/main.16999e42.js"
   ]
 }

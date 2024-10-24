@@ -105,19 +105,6 @@ const Header = () => {
                         <li>
                             <Link
                                 activeClass="active"
-                                to="projects"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                onClick={() => handleSetActive('projects')}
-                                className={activeLink === 'projects' ? 'active' : ''}
-                            >
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
                                 to="contact"
                                 spy={true}
                                 smooth={true}

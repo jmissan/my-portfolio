@@ -14,6 +14,7 @@ import col from '../IMG_1183.JPG';
 import mail from '../mail3.webp';
 import linkedin from '../linkedinlogo.png';
 import github from '../github.webp';
+import UT from '../University_of_Texas_at_Austin_seal.svg.png';
 
 const AboutMe = () => {
     const [meRef, meInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -34,7 +35,7 @@ const AboutMe = () => {
                             <img src={col} alt="Profile" />
                         </div>
                         <div className="profile-text">
-                            <p>Hi! My name's Joey Missan. I am currently a Software Development Engineer 1 at AMD, where I work on back-end software focused with hints of systems design engineering. My typical day consists of creating API endpoints using Java/Spring Boot to ensure the front-end team receives all of the data they need to provide an efficient UX design. I also write task scripts in Python for our company's internal automation software to be utilized by other teams, and I create schema/edit data for our software in SQL on a daily basis. Additionally, I often work with our company's SUT's, or system's-under-test, to validate and automate test cases, and I document projects my team and I have worked on in Confluence for other teams to view as necessary.</p>
+                            <p>Hi! My name's Joey Missan. I am currently a Software Development Engineer 2 at AMD, where I work on back-end software focused with hints of systems design engineering. My typical day consists of creating API endpoints using Java/Spring Boot to ensure the front-end team receives all of the data they need to provide an efficient UX design. I also write task scripts in Python for our company's internal automation software to be utilized by other teams, and I create schema/edit data for our software in SQL on a daily basis. Additionally, I often work with our company's SUT's, or system's-under-test, to validate and automate test cases, and I document projects my team and I have worked on in Confluence for other teams to view as necessary.</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@ const AboutMe = () => {
                     <h2 className="section-title">Interests</h2>
                     <div className="interests-content">
                         <div className="interests-text">
-                            <p>Outside of coding, I enjoy going to the gym, playing piano, cooking, traveling, and hanging out with friends. I am always open and willing to try new things! Ever since moving to Austin, I've met awesome people and explored the city (although there is always more to see!), and I am excited to continue my life journey in the live music capital of the world.</p>
+                            <p>Outside of coding, I enjoy going to the gym, playing piano/listening to music, watching movies, cooking, traveling, and hanging out with friends. I am always open and willing to try new things! Ever since moving to Austin, I've met awesome people and explored the city (although there is always more to see!), and I am excited to continue my life journey in the live music capital of the world.</p>
                         </div>
                     </div>
                 </div>
@@ -105,6 +106,16 @@ const AboutMe = () => {
             <section ref={educationRef} id="education" className={`section education ${educationInView ? 'fly-in' : ''}`}>
                 <div className="container">
                     <h2 className="section-title">Education</h2>
+                    <div className="education-content">
+                        <div className="education-image">
+                            <img src={UT} alt="Profile" />
+                        </div>
+                        <div className="education-text">
+                            <h3><b>University of Texas at Austin</b></h3>
+                            <p><i><b>Candidate for Master of Science in Computer Science (2027)</b><br />Computer Science, General</i></p>
+                        </div>
+                    </div>
+                    <br />
                     <div className="education-content">
                         <div className="education-image">
                             <img src={gamecock} alt="Profile" />

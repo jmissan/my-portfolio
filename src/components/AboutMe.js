@@ -137,7 +137,7 @@ const AboutMe = () => {
                         <img src={mail} alt="Email" />
                         <span>Email</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/joseph-missan-9448171b8/" className="contact-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/joeymissan/" className="contact-link" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="LinkedIn" />
                         <span>LinkedIn</span>
                     </a>

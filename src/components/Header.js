@@ -79,19 +79,6 @@ const Header = () => {
                         <li>
                             <Link
                                 activeClass="active"
-                                to="interests"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                onClick={() => handleSetActive('interests')}
-                                className={activeLink === 'interests' ? 'active' : ''}
-                            >
-                                Interests
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
                                 to="education"
                                 spy={true}
                                 smooth={true}
@@ -100,6 +87,32 @@ const Header = () => {
                                 className={activeLink === 'education' ? 'active' : ''}
                             >
                                 Education
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={() => handleSetActive('projects')}
+                                className={activeLink === 'projects' ? 'active' : ''}
+                            >
+                                Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="active"
+                                to="interests"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={() => handleSetActive('interests')}
+                                className={activeLink === 'interests' ? 'active' : ''}
+                            >
+                                Interests
                             </Link>
                         </li>
                         <li>

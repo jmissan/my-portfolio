@@ -286,6 +286,75 @@ body {
     color: #555;
 }
 
+/* Projects Section Styles */
+.projects .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eaf6ff; /* Light blue background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+}
+
+.projects .projects-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin: 10px;
+    max-width: 500px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #1a237e;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.project-card li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* Responsive for Projects */
+@media (max-width: 768px) {
+    .projects .projects-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .project-card {
+        max-width: 100%;
+    }
+}
+
 /* Skills Section Styles */
 .skills .skills-content {
     display: flex;

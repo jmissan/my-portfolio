@@ -15,12 +15,15 @@ import mail from '../mail3.webp';
 import linkedin from '../linkedinlogo.png';
 import github from '../github.webp';
 import UT from '../University_of_Texas_at_Austin_seal.svg.png';
+import dugoutcord1 from '../DugoutCord1.png';
+import dugoutcord2 from '../DugoutCord2.png';
 
 const AboutMe = () => {
     const [meRef, meInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [bioRef, bioInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [skillsRef, skillsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [interestsRef, interestsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+    const [projectsRef, projectsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [educationRef, educationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
@@ -92,17 +95,6 @@ const AboutMe = () => {
                 </div>
             </section>
 
-            <section ref={interestsRef} id="interests" className={`section interests ${interestsInView ? 'fly-in' : ''}`}>
-                <div className="container">
-                    <h2 className="section-title">Interests</h2>
-                    <div className="interests-content">
-                        <div className="interests-text">
-                            <p>Outside of coding, I enjoy going to the gym, playing piano/listening to music, watching movies, cooking, traveling, and hanging out with friends. I am always open and willing to try new things! Ever since moving to Austin, I've met awesome people and explored the city (although there is always more to see!), and I am excited to continue my life journey in the live music capital of the world.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section ref={educationRef} id="education" className={`section education ${educationInView ? 'fly-in' : ''}`}>
                 <div className="container">
                     <h2 className="section-title">Education</h2>
@@ -112,7 +104,7 @@ const AboutMe = () => {
                         </div>
                         <div className="education-text">
                             <h3><b>University of Texas at Austin</b></h3>
-                            <p><i><b>Candidate for Master of Science in Computer Science (2027)</b><br />Computer Science, General</i></p>
+                            <p><i><b>Candidate for Master of Science in Computer Science (2027)</b><br />Computer Science, General<br />GPA: 4.0</i></p>
                         </div>
                     </div>
                     <br />
@@ -122,11 +114,50 @@ const AboutMe = () => {
                         </div>
                         <div className="education-text">
                             <h3><b>University of South Carolina</b></h3>
-                            <p><i><b>Bachelor of Science in Engineering (2024)</b><br />Computer Engineering, Electrical Engineering Minor</i></p>
+                            <p><i><b>Bachelor of Science in Engineering (2024)</b><br />Computer Engineering, Electrical Engineering Minor<br />GPA: 4.0</i></p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section ref={projectsRef} className={`section projects ${projectsInView ? 'fly-in' : ''}`}>
+                <div className="container">
+                    <h2 className="section-title">Projects</h2>
+                    <div className="projects-content">
+                        <div className="project-card">
+                            <h3>DugoutCord</h3>
+                            <p>
+                                DugoutCord is a Kotlin-based mobile app that merges the best features of ESPN and Discord for MLB fans. Users can view live updates, real-time scores, and chat with other fans of their favorite teams.
+                            </p>
+                            <ul>
+                                <li>Live MLB game updates & real-time scores via ESPN's hidden API</li>
+                                <li>Standings tab, stadium map via Google Maps API, team rosters</li>
+                                <li>Individual player info for every MLB team</li>
+                                <li>Scoreboard & play-by-play screen</li>
+                                <li>Real-time MLB news articles list</li>
+                                <li>Chat rooms for team communities</li>
+                                <li>Notifications for chats and/or news articles</li>
+                                <li>Firebase Authentication & Cloud Firestore</li>
+                                <li>Home screen for setting preferences (favorite team, notifications, display name)</li>
+                            </ul>
+                            <br></br>
+                            <img src={dugoutcord1} alt="DugoutCord Screenshot 1" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px' }} />
+                            <img src={dugoutcord2} alt="DugoutCord Screenshot 2" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px' }} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section ref={interestsRef} id="interests" className={`section interests ${interestsInView ? 'fly-in' : ''}`}>
+                <div className="container">
+                    <h2 className="section-title">Interests</h2>
+                    <div className="interests-content">
+                        <div className="interests-text">
+                            <p>Outside of coding, I enjoy going to the gym, playing piano/listening to music, watching movies, cooking, traveling, and hanging out with friends. I am always open and willing to try new things! Ever since moving to Austin, I've met awesome people and explored the city (although there is always more to see!), and I am excited to continue my life journey in the Live Music Capital of the World.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>            
 
             <section ref={contactRef} id="contact" className={`section contact ${contactInView ? 'fly-in' : ''}`}>
                 <div className="container">
